@@ -1,25 +1,44 @@
-package com.veterinaria;
+.root {
+    -fx-background-color: #f4f6f8;
+}
 
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
+.titulo {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: #0f5c5c;
+    -fx-padding: 10px 20px;
+}
 
-public class App extends Application {
+.label {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
 
-    @Override
-    public void start(Stage stage) throws Exception {
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: #b0bec5;
+    -fx-border-width: 2px;
+}
 
-        Scene scene = new Scene(
-                FXMLLoader.load(getClass().getResource("veterinaria.fxml"))
-        );
+.btnRegistrar {
+    -fx-background-color: #0b7a6d;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
 
-        stage.setTitle("Veterinaria");
-        stage.setScene(scene);
-        stage.show();
-    }
+.btnRegistrar:hover {
+    -fx-background-color: #095d53;
+}
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+.btnLimpiar {
+    -fx-background-color: #8fa2b2;
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.btnLimpiar:hover {
+    -fx-background-color: #728392;
 }
